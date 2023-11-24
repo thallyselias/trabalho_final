@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="trabalho.js"></script>
+  <title>SAFELIFE - A MELHOR FERRAMENTA DE COMPARAÇÃO DE PLANOS DE SAÚDE</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-4 col-lg-2 my-col"><img src="SAFELIFE_logo.png" alt="logo" width="90px"></div>
+      <div class="col-sm-7 col-md-6 col-lg-7 my-col"><b>SUA SEGURANÇA E SUA SAÚDE COMEÇAM AQUI</b></div>
+      <div class="col-sm-2 col-md-2 col-lg-3 my-col"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg> LOGIN</div>
+    </div>  
+  </div>  
+  <p><h2><center>Está buscando por planos de saúde com o melhor custo-benefício?</center></h2></p> 
+  <p><h5><center>Desenvolvemos uma ferramenta que compara os planos das maiores empresas do mercado </center></h5></p> 
+  <div class="container text-center1">
+      <h1>Calculadora IMC</h1>
+
+      <label for="idade" class="form-label">Informe sua idade</label>
+      <input type="number" id="idade" class="form-control">
+
+      <label for="peso" class="form-label">Informe seu Peso (kg)</label>
+      <input type="number" id="peso" class="form-control">
+
+      <label for="altura" class="form-label">Informe sua Altura (m)</label>
+      <input type="number" id="altura" class="form-control">
+
+      <button type="button" class="btn btn-warning" onclick="calcular()">Calcular</button>
+      <h3 id="resultado"></h3>
+  </div>
+    <div class="container text-center2">
+      <h1>Plano de Saúde A:</h1>
+
+      <p>O valor do plano básico é: <h5 id="basico1"></h5></p>
+      <p>O valor do plano standart é: <h5 id="standart1"></h5></p>
+       <p>O valor do plano premium é: <h5 id="premium1"></h5></p>
+
+    </div>  
+    <div class="container text-center3">
+      <h1>Plano de Saúde B:</h1>
+
+      <p>O valor do plano básico é: <h5 id="basico2"></h5></p>
+      <p>O valor do plano standart é: <h5 id="standart2"></h5></p>
+      <p>O valor do plano premium é: <h5 id="premium2"></h5></p>
+    </div> 
+    <div class="container text-center4">
+      <h1>Melhor custo beneficio é:</h1>
+  
+      <p>Para o plano básico é: <h5 id="comparacaoPlanoBasico"></h5></p>
+      <p>Para o plano standart é: <h5 id="comparacaoPlanoStandart"></h5></p>
+      <p>Para o plano premium é: <h5 id="comparacaoPlanoPremium"></h5></p>
+    </div>
+ </body>
+</html>
